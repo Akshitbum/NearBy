@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resCell" rowHeight="215" id="Sh4-wj-L4z" customClass="ResultCell">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sh4-wj-L4z" id="Wnl-9I-rOl">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="214"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-5b-uvA">
+                        <rect key="frame" x="8" y="0.0" width="368" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="96x-iD-ArY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yT-cg-2b2">
+                        <rect key="frame" x="18" y="158" width="358" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="RR6-eZ-rqo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gD3-UV-LH3">
+                        <rect key="frame" x="18" y="183" width="200" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="NCk-Tt-j4M"/>
+                            <constraint firstAttribute="width" constant="200" id="q4j-Rw-Tlc"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOC-Ka-RpZ">
+                        <rect key="frame" x="8" y="0.0" width="368" height="206"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                <color key="value" red="0.68627450980392157" green="0.68627450980392157" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7Nx-5b-uvA" firstAttribute="leading" secondItem="Wnl-9I-rOl" secondAttribute="leadingMargin" id="36P-ff-VvQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7Nx-5b-uvA" secondAttribute="trailing" id="94J-wK-zwd"/>
+                    <constraint firstItem="GOC-Ka-RpZ" firstAttribute="leading" secondItem="Wnl-9I-rOl" secondAttribute="leadingMargin" id="Aw2-dz-l1F"/>
+                    <constraint firstItem="3yT-cg-2b2" firstAttribute="top" secondItem="7Nx-5b-uvA" secondAttribute="bottom" constant="8" id="FdJ-hA-tds"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3yT-cg-2b2" secondAttribute="trailing" id="FvJ-0H-IfI"/>
+                    <constraint firstItem="GOC-Ka-RpZ" firstAttribute="top" secondItem="Wnl-9I-rOl" secondAttribute="topMargin" constant="-8" id="RJh-oO-IBS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="GOC-Ka-RpZ" secondAttribute="bottom" id="SDf-Bq-zWR"/>
+                    <constraint firstItem="gD3-UV-LH3" firstAttribute="leading" secondItem="Wnl-9I-rOl" secondAttribute="leadingMargin" constant="10" id="T6l-l6-KeI"/>
+                    <constraint firstItem="3yT-cg-2b2" firstAttribute="leading" secondItem="Wnl-9I-rOl" secondAttribute="leadingMargin" constant="10" id="XjH-gD-VeV"/>
+                    <constraint firstItem="gD3-UV-LH3" firstAttribute="top" secondItem="3yT-cg-2b2" secondAttribute="bottom" constant="4" id="gqh-0B-CPc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GOC-Ka-RpZ" secondAttribute="trailing" id="pOh-To-5Py"/>
+                    <constraint firstItem="7Nx-5b-uvA" firstAttribute="top" secondItem="Wnl-9I-rOl" secondAttribute="topMargin" constant="-8" id="qsa-eh-uwA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="resCell"/>
+            <connections>
+                <outlet property="imv" destination="7Nx-5b-uvA" id="HYe-dv-Bco"/>
+                <outlet property="lbl" destination="3yT-cg-2b2" id="m3k-vL-3ID"/>
+                <outlet property="rating" destination="gD3-UV-LH3" id="Ya9-7a-0qU"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="376.5"/>
+        </tableViewCell>
+    </objects>
+</document>
