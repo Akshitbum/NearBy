@@ -135,7 +135,7 @@
     
     NSMutableArray* array = [[NSMutableArray alloc] initWithObjects:@"Retry", nil];
     UIAlertController *alertController = [Alert getCustomizeALert:@"Error" message: kLocatioinError actionArray:array handler:^(int index) {
-        [_gAppDelegate showLoadingView:YES];
+        [_gAppDelegate showLoadingView:YES]; 
         [alertController dismissViewControllerAnimated:YES completion:nil];
         [_locationManager startUpdatingLocation];
     }];
